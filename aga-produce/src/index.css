@@ -3,3 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+.page-content {
+    flex: 1;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#navbar {
+    flex-shrink: 0;
+}
+
+#footer {
+    flex-shrink: 0;
+    margin-top: auto;
+}
