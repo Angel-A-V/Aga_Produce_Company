@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../assets/logo/logo-transparency.png'
 import fruit from '../assets/logo/fruit-bowl.png'
@@ -48,6 +48,9 @@ function Navbar() {
         scrolled ? 'nav-scrolled' : '',
     ].filter(Boolean).join(' ')
 
+    const linkClass = ({ isActive }) =>
+        `hvr-underline-from-center${isActive ? ' active' : ''}`
+
     return (
         <nav id='navbar' className={navClass}>
             <img id='fruitbowl1' src={fruit} alt="Fruit-bowl" />
@@ -63,10 +66,10 @@ function Navbar() {
             </button>
 
             <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-                <Link to="/" className="hvr-underline-from-center" onClick={() => setMenuOpen(false)}>Home</Link>
-                <Link to="/about" className="hvr-underline-from-center" onClick={() => setMenuOpen(false)}>About</Link>
-                <Link to="/products" className="hvr-underline-from-center" onClick={() => setMenuOpen(false)}>Products</Link>
-                <Link to="/contact" className="hvr-underline-from-center" onClick={() => setMenuOpen(false)}>Contact</Link>
+                <NavLink to="/" end className={linkClass} onClick={() => setMenuOpen(false)}>Home</NavLink>
+                <NavLink to="/about" className={linkClass} onClick={() => setMenuOpen(false)}>About</NavLink>
+                <NavLink to="/products" className={linkClass} onClick={() => setMenuOpen(false)}>Products</NavLink>
+                <NavLink to="/contact" className={linkClass} onClick={() => setMenuOpen(false)}>Contact</NavLink>
             </div>
 
             <div className='nav-right'>

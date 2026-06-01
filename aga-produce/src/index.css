@@ -8,6 +8,10 @@ html, body, #root {
     height: 100%;
 }
 
+html, body {
+    overscroll-behavior-y: none;
+}
+
 #root {
     display: flex;
     flex-direction: column;
