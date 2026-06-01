@@ -247,7 +247,7 @@ function Contact() {
                         )}
                     </Box>
                 </Box>
-                <Box className="faq-section-wrapper" sx={{bgcolor: '#cfbe9d', width: '100%', py: { xs: 8, md: 12 } }}>
+                <Box className="faq-section-wrapper" sx={{bgcolor: '#E7DECE', width: '100%', py: { xs: 8, md: 12 } }}>
                     <Box  sx={{ maxWidth: 760, mx: 'auto', px: 3 }}>
                         <Typography
                             component="h3"
