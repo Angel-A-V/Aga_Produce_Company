@@ -21,7 +21,7 @@ function Footer() {
 
                 <div className='footer-contact'>
                     <h4>Get in Touch</h4>
-                    <p className='footer-company'>AGA Produce Compnay Inc. </p>
+                    <p className='footer-company'>AGA Produce Company Inc. </p>
                     <p>1146 S Vail Ave</p>
                     <p>Montebello, CA 90640</p>
                     <p>Tel: <a href="tel:+13234771177">(323) 477-1177</a></p>

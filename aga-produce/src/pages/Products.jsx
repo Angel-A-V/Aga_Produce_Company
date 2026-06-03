@@ -18,8 +18,6 @@ const GREEN_DARK = '#2d5a1b'
 const GOLD = '#c9a84c'
 const TEXT_DARK = '#3d3228'
 const FONT = 'Nunito, sans-serif'
-const GREEN_MID = '#4a8c2a'
-const CREAM = '#f5f0e8'
 
 const categories = [
     {
@@ -229,13 +227,14 @@ function Products() {
                                 textTransform: 'none',
                                 fontSize: '1.05rem',
                                 bgcolor: GOLD,
-                                color: GREEN_DARK,
+                                color: '#1a2e0f',
                                 px: 4,
                                 py: 1.5,
                                 borderRadius: 2,
                                 whiteSpace: 'nowrap',
                                 flexShrink: 0,
-                                '&:hover': { bgcolor: CREAM },
+                                transition: 'transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease',
+                                '&:hover': { bgcolor: '#b89640', transform: 'translateY(-3px)', boxShadow: '0 10px 22px rgba(0,0,0,0.28)' },
                             }}
                         >
                             Contact Us

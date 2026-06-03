@@ -19,7 +19,7 @@ const TEXT_DARK = '#3d3228'
 const FONT = 'Nunito, sans-serif'
 
 const CONTACT_EMAIL = 'orders@agaproduce.com'
-const PHONES = ['TEL: (213) 547-5929', 'FAX: (323) 477-1177']
+const PHONES = ['TEL: (323) 477-1177', 'FAX: (323) 477-1177']
 const IG_HANDLE = 'aga_producecompanyinc'
 const ADDRESS = '1146 S Vail Ave, Montebello, CA 90640'
 const HOURS = 'Mon - Sun: 1:00 AM - 2:00 PM'
