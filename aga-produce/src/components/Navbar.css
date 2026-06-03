@@ -212,7 +212,7 @@ body {
     left: 0;
     transform: translateY(4px);
     min-width: 210px;
-    background-color: var(--linen);
+    background-color: var(--cream);
     border-top: 3px solid var(--gold);
     border-radius: 0 0 8px 8px;
     box-shadow: 0 16px 30px rgba(26, 46, 15, 0.14);
